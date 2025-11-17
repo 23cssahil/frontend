@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports - BookMyShow Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR (Same as index.html) ================= -->
+  <header class="navbar">
+    <div class="logo">BookMyShow</div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search sports...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+     <!-- Navigation Links -->
+      
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="plays.html">Plays</a></li>
+        <li><a href="sports.html" class="active">Sports</a></li>
+        <li><button class="login-btn" id="loginBtn">Login</button></li>
+        <li><button class="signup-btn" id="signupBtn">Signup</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= SPORTS SECTION ================= -->
+  <section class="movies">
+    <h2>Upcoming Sports Events</h2>
+    <div class="movie-grid" id="sports-grid">
+
+      <div class="movie-card">
+        <img src="assets/sports/cricket.jpg" alt="Cricket">
+        <h3>India vs Australia T20</h3>
+        <p>🏏 Cricket | Delhi</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/sports/football.jpg" alt="Football">
+        <h3>Premier League Final</h3>
+        <p>⚽ Football | Mumbai</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/sports/tennis.jpg" alt="Tennis">
+        <h3>Open Tennis Championship</h3>
+        <p>🎾 Tennis | Bangalore</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/sports/marathon.jpg" alt="Marathon">
+        <h3>City Marathon 2025</h3>
+        <p>🏃 Marathon | Hyderabad</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 BookMyShow Clone | Designed by You</p>
+  </footer>
+
+  <script src="sports.js"></script>
+</body>
+</html>

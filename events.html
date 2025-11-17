@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - BookMyShow Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR (same as index.html) ================= -->
+   
+  <header class="navbar">
+    <div class="logo">BookMyShow</div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search events...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+     <!-- Navigation Links -->
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="plays.html">Plays</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><button class="login-btn" id="loginBtn">Login</button></li>
+        <li><button class="signup-btn" id="signupBtn">Signup</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= EVENTS SECTION ================= -->
+  <section class="movies">
+    <h2>Upcoming Events</h2>
+    <div class="movie-grid" id="events-grid">
+      <div class="movie-card">
+        <img src="assets/events/musicfest.jpg" alt="Music Fest">
+        <h3>Live Music Fest 2025</h3>
+        <p>🎵 Music | Mumbai</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/events/comedy.jpg" alt="Comedy Show">
+        <h3>Stand-Up Comedy Night</h3>
+        <p>😂 Comedy | Delhi</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/events/art.jpg" alt="Art Expo">
+        <h3>Art & Culture Expo</h3>
+        <p>🎨 Exhibition | Hyderabad</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card">
+        <img src="assets/events/concert.jpg" alt="Concert">
+        <h3>Rock Concert Night</h3>
+        <p>🎤 Live | Bangalore</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 BookMyShow Clone | Designed by You</p>
+  </footer>
+
+  <script src="events.js"></script>
+</body>
+</html>

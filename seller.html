@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Seller Panel</div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#addShow">Add Show</a></li>
+      <li><a href="#myShows">My Shows</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="seller-hero">
+  <h1>Seller Dashboard</h1>
+  <p>Manage Movies, Events, Plays & Sports Shows</p>
+</section>
+
+<!-- ================= ADD SHOW FORM ================= -->
+<section class="add-show-section" id="addShow">
+  <h2>Add New Show</h2>
+
+  <form class="seller-form" id="sellerForm">
+
+    <!-- CATEGORY -->
+    <select required>
+      <option value="">Select Category</option>
+      <option value="Movie">Movie</option>
+      <option value="Event">Event</option>
+      <option value="Play">Play</option>
+      <option value="Sports">Sports Match</option>
+    </select>
+
+    <!-- TITLE -->
+    <input type="text" placeholder="Title (Movie/Event/Match Name)" required>
+
+    <!-- POSTER IMAGE -->
+    <input type="text" placeholder="Poster Image URL" required>
+
+    <!-- LOCATION -->
+    <input type="text" placeholder="Location / Venue" required>
+
+    <!-- DATE + TIME -->
+    <div class="form-row">
+      <input type="date" required>
+      <input type="time" required>
+    </div>
+
+    <!-- PRICE + SEATS -->
+    <div class="form-row">
+      <input type="number" placeholder="Total Seats" required>
+      <input type="number" placeholder="Ticket Price (₹)" required>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <textarea rows="3" placeholder="Short Description"></textarea>
+
+    <button type="submit" class="submit-btn">Add Show</button>
+  </form>
+</section>
+
+<!-- ================= ADDED SHOWS LIST ================= -->
+<section class="my-shows" id="myShows">
+  <h2>My Shows</h2>
+
+  <div class="shows-container" id="showsContainer">
+
+    <!-- Example card -->
+    <div class="show-card">
+      <img src="./assets/pathan_img.jpg" alt="">
+      <div class="show-info">
+        <h3>Pathan</h3>
+        <p>Category: Movie</p>
+        <p>Venue: PVR Cinema</p>
+        <p>Date: 2025-05-12 | Time: 7:30 PM</p>
+        <p>Seats: 120 | Price: ₹250</p>
+      </div>
+
+      <div class="show-actions">
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2025 Seller Panel | Ticket Booking System</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

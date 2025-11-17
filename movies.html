@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies - BookMyShow Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="logo">BookMyShow</div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search movies...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <!-- Nav Links -->
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html" class="active">Movies</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="plays.html">Plays</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><button class="login-btn" id="loginBtn">Login</button></li>
+        <li><button class="signup-btn" id="signupBtn">Signup</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= CAROUSEL ================= -->
+  <section class="carousel">
+    <button class="prev">&#10094;</button>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.gYj34o86NtzHQiMRsa0RyQHaDs?cb=ucfimg2ucfimg=1&w=580&h=289&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Banner 1">
+        <img src="https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-12-13/1f6806f0-3d3e-11eb-892b-1727b307c367.jpg" alt="Banner 2">
+        <img src="https://blog.hubspot.com/hs-fs/hubfs/Screenshot%202023-08-23%20at%207.10.18%20PM.png?width=1950&height=945&name=Screenshot%202023-08-23%20at%207.10.18%20PM.png" alt="Banner 3">
+      </div>
+    </div>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <!-- ================= FILTERS SECTION ================= -->
+  <section class="filters">
+    <h2>Filter Movies</h2>
+    <div class="filter-options">
+
+      <!-- Location Dropdown -->
+      <div class="custom-dropdown" data-filter="location">
+        <div class="dropdown-selected">Select Location</div>
+        <ul class="dropdown-list">
+          <li data-value="">Select Location</li>
+          <li data-value="delhi">Delhi</li>
+          <li data-value="mumbai">Mumbai</li>
+          <li data-value="bangalore">Bangalore</li>
+          <li data-value="hyderabad">Hyderabad</li>
+        </ul>
+      </div>
+
+      <!-- Genre Dropdown -->
+      <div class="custom-dropdown" data-filter="genre">
+        <div class="dropdown-selected">Select Genre</div>
+        <ul class="dropdown-list">
+          <li data-value="">Select Genre</li>
+          <li data-value="action">Action</li>
+          <li data-value="comedy">Comedy</li>
+          <li data-value="drama">Drama</li>
+          <li data-value="thriller">Thriller</li>
+        </ul>
+      </div>
+
+      <!-- Language Dropdown -->
+      <div class="custom-dropdown" data-filter="language">
+        <div class="dropdown-selected">Select Language</div>
+        <ul class="dropdown-list">
+          <li data-value="">Select Language</li>
+          <li data-value="hindi">Hindi</li>
+          <li data-value="english">English</li>
+          <li data-value="tamil">Tamil</li>
+          <li data-value="telugu">Telugu</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <button id="resetFilters" class="reset-btn">Reset Filters</button>
+  </section>
+
+  <!-- ================= MOVIE GRID ================= -->
+  <section class="movies">
+    <h2>Now Showing</h2>
+    <div class="movie-grid">
+
+      <div class="movie-card" data-genre="action" data-language="hindi" data-location="delhi">
+        <img src="https://wallpaperaccess.com/full/8641619.jpg" alt="Pathan">
+        <h3>Pathan</h3>
+        <p>Action | Hindi</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card" data-genre="comedy" data-language="english" data-location="mumbai">
+        <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2025/08/Jatadhara-001.jpg" alt="Jatadhara">
+        <h3>Jatadhara</h3>
+        <p>Comedy | English</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card" data-genre="drama" data-language="tamil" data-location="bangalore">
+        <img src="https://cdn.moviefone.com/image-assets/58478/ppRsgHJ2rp7zCb7JorX49k8k5Sg.jpg?d=360x540&q=60" alt="Haq">
+        <h3>Haq</h3>
+        <p>Drama | Tamil</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+      <div class="movie-card" data-genre="thriller" data-language="english" data-location="hyderabad">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.KBBvdMuhZvf25Gc8vg1XjwHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Predator Badlands">
+        <h3>Predator Badlands</h3>
+        <p>Thriller | English</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 BookMyShow Clone | Designed by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="movies.js"></script>
+</body>
+</html>
