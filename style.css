@@ -194,10 +194,12 @@ body {
 }
 
 .movie-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Desktop: 4 Movies */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
+  padding: 20px;
 }
 
 
