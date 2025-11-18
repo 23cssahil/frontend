@@ -45,7 +45,7 @@ body {
   padding: 10px 12px;
   border-radius: 20px 0 0 20px;
   border: none;
-  width: 250px;
+  width: 450px;
   outline: none;
   font-size: 0.9em;
 }
@@ -54,7 +54,7 @@ body {
   background-color: #e50914;
   border: none;
   color: white;
-  padding: 10px 90px;
+  padding: 10px 20px;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
   font-weight: 500;
@@ -194,7 +194,7 @@ body {
 }
 
 .movie-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr); /* Desktop: 4 Movies */
   flex-wrap: wrap;
   justify-content: center;
