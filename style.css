@@ -194,8 +194,7 @@ body {
 }
 
 .movie-grid {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr); /* Desktop: 4 Movies */
+  display: grid;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
